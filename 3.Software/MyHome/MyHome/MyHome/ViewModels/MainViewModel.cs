@@ -109,11 +109,11 @@ namespace MyHome.ViewModels
 
         private void Tick_tick(object state)
         {
-            AlibabaCloud.SDK.Iot20180120.Client client = CreateClient("LTAI5tDxgXQhAPK89WZx9j9V", "wF6FlNXrEV563oZEraYGMJhbqAdYKu");
+            AlibabaCloud.SDK.Iot20180120.Client client = CreateClient("", "");
             AlibabaCloud.SDK.Iot20180120.Models.QueryDevicePropertyStatusRequest queryDevicePropertyStatusRequest = new AlibabaCloud.SDK.Iot20180120.Models.QueryDevicePropertyStatusRequest
             {
-                IotInstanceId = "iot-06z00fac0zmj2le",
-                ProductKey = "h9xwJufiIbz",
+                IotInstanceId = "",
+                ProductKey = "",
                 DeviceName = "ESP8266",
             };
             AlibabaCloud.TeaUtil.Models.RuntimeOptions runtime = new AlibabaCloud.TeaUtil.Models.RuntimeOptions();
@@ -139,7 +139,7 @@ namespace MyHome.ViewModels
             AlibabaCloud.SDK.Iot20180120.Models.GetDeviceStatusRequest getDeviceStatusRequest = new AlibabaCloud.SDK.Iot20180120.Models.GetDeviceStatusRequest()
             {
                 IotInstanceId = "iot-06z00fac0zmj2le",
-                ProductKey = "h9xwJufiIbz",
+                ProductKey = "",
                 DeviceName = "ESP8266",
             };
             GetDeviceStatusResponse statusResponse = client.GetDeviceStatusWithOptions(getDeviceStatusRequest,runtime); 
@@ -159,11 +159,11 @@ namespace MyHome.ViewModels
         private void OnChange()
         {
             LED = (LED == "OFF") ? "ON" : "OFF";
-            AlibabaCloud.SDK.Iot20180120.Client client = CreateClient("LTAI5tDxgXQhAPK89WZx9j9V", "wF6FlNXrEV563oZEraYGMJhbqAdYKu");
+            AlibabaCloud.SDK.Iot20180120.Client client = CreateClient("", "");
             AlibabaCloud.SDK.Iot20180120.Models.SetDevicePropertyRequest setDevicePropertyRequest = new SetDevicePropertyRequest
             {
                 IotInstanceId = "iot-06z00fac0zmj2le",
-                ProductKey = "h9xwJufiIbz",
+                ProductKey = "",
                 DeviceName = "ESP8266",
                 Items = CreateLEDjson(LED)
             };
@@ -189,11 +189,11 @@ namespace MyHome.ViewModels
         {
             TimeText = TimeSpan.TotalMinutes.ToString();
             
-            AlibabaCloud.SDK.Iot20180120.Client client = CreateClient("LTAI5tDxgXQhAPK89WZx9j9V", "wF6FlNXrEV563oZEraYGMJhbqAdYKu");
+            AlibabaCloud.SDK.Iot20180120.Client client = CreateClient("", "");
             AlibabaCloud.SDK.Iot20180120.Models.SetDevicePropertyRequest setDevicePropertyRequest = new SetDevicePropertyRequest
             {
-                IotInstanceId = "iot-06z00fac0zmj2le",
-                ProductKey = "h9xwJufiIbz",
+                IotInstanceId = "",
+                ProductKey = "",
                 DeviceName = "ESP8266",
                 Items = CreateAlarmjson(TimeText)
             };
