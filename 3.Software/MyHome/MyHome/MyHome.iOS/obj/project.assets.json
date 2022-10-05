@@ -1,0 +1,2002 @@
+{
+  "version": 3,
+  "targets": {
+    "Xamarin.iOS,Version=v1.0": {
+      "AlibabaCloud.EndpointUtil/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.GatewaySpi/0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiClient/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.GatewaySpi": "0.0.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.13",
+          "AlibabaCloud.TeaUtil": "0.1.12",
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiUtil/1.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.RPCClient/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.9",
+          "Aliyun.Credentials": "1.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Common/0.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Iot20180120/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.EndpointUtil": "0.1.1",
+          "AlibabaCloud.OpenApiClient": "0.1.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.14",
+          "AlibabaCloud.RPCClient": "1.0.1",
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.13",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        }
+      },
+      "AlibabaCloud.TeaUtil/0.1.13": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        }
+      },
+      "Aliyun.Credentials/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Tea/1.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tea.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tea.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll",
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.Forms/5.0.0.2196": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "MyHome/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AlibabaCloud.SDK.Iot20180120": "3.0.5",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2196"
+        },
+        "compile": {
+          "bin/placeholder/MyHome.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyHome.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win": {
+      "AlibabaCloud.EndpointUtil/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.GatewaySpi/0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiClient/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.GatewaySpi": "0.0.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.13",
+          "AlibabaCloud.TeaUtil": "0.1.12",
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiUtil/1.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.RPCClient/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.9",
+          "Aliyun.Credentials": "1.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Common/0.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Iot20180120/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.EndpointUtil": "0.1.1",
+          "AlibabaCloud.OpenApiClient": "0.1.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.14",
+          "AlibabaCloud.RPCClient": "1.0.1",
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.13",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        }
+      },
+      "AlibabaCloud.TeaUtil/0.1.13": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        }
+      },
+      "Aliyun.Credentials/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Tea/1.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tea.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tea.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll",
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.Forms/5.0.0.2196": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "MyHome/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AlibabaCloud.SDK.Iot20180120": "3.0.5",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2196"
+        },
+        "compile": {
+          "bin/placeholder/MyHome.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyHome.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x64": {
+      "AlibabaCloud.EndpointUtil/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.GatewaySpi/0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiClient/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.GatewaySpi": "0.0.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.13",
+          "AlibabaCloud.TeaUtil": "0.1.12",
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiUtil/1.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.RPCClient/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.9",
+          "Aliyun.Credentials": "1.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Common/0.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Iot20180120/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.EndpointUtil": "0.1.1",
+          "AlibabaCloud.OpenApiClient": "0.1.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.14",
+          "AlibabaCloud.RPCClient": "1.0.1",
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.13",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        }
+      },
+      "AlibabaCloud.TeaUtil/0.1.13": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        }
+      },
+      "Aliyun.Credentials/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Tea/1.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tea.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tea.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll",
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.Forms/5.0.0.2196": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "MyHome/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AlibabaCloud.SDK.Iot20180120": "3.0.5",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2196"
+        },
+        "compile": {
+          "bin/placeholder/MyHome.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyHome.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x86": {
+      "AlibabaCloud.EndpointUtil/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.GatewaySpi/0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiClient/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.GatewaySpi": "0.0.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.13",
+          "AlibabaCloud.TeaUtil": "0.1.12",
+          "Aliyun.Credentials": "1.3.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll": {}
+        }
+      },
+      "AlibabaCloud.OpenApiUtil/1.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll": {}
+        }
+      },
+      "AlibabaCloud.RPCClient/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.9",
+          "Aliyun.Credentials": "1.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.RPCClient.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Common/0.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "0.3.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll": {}
+        }
+      },
+      "AlibabaCloud.SDK.Iot20180120/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "AlibabaCloud.EndpointUtil": "0.1.1",
+          "AlibabaCloud.OpenApiClient": "0.1.1",
+          "AlibabaCloud.OpenApiUtil": "1.0.14",
+          "AlibabaCloud.RPCClient": "1.0.1",
+          "AlibabaCloud.SDK.Common": "0.2.5",
+          "AlibabaCloud.TeaUtil": "0.1.13",
+          "Tea": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll": {}
+        }
+      },
+      "AlibabaCloud.TeaUtil/0.1.13": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll": {}
+        }
+      },
+      "Aliyun.Credentials/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Newtonsoft.Json": "9.0.1",
+          "Tea": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aliyun.Credentials.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Tea/1.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tea.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tea.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll",
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.Forms/5.0.0.2196": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {
+            "related": ".iOS.pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {
+            "related": ".pdb"
+          },
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "MyHome/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AlibabaCloud.SDK.Iot20180120": "3.0.5",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2196"
+        },
+        "compile": {
+          "bin/placeholder/MyHome.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyHome.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AlibabaCloud.EndpointUtil/0.1.1": {
+      "sha512": "p/vsdJoVIfc1QREW4JX1tpzKdZZcFdw6/qfrylfcFXc0e2BDMQ2kPrv3nkyr2u+p4BF0PmOYl4EDqRtqLiBc+g==",
+      "type": "package",
+      "path": "alibabacloud.endpointutil/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.endpointutil.0.1.1.nupkg.sha512",
+        "alibabacloud.endpointutil.nuspec",
+        "lib/net45/AlibabaCloud.EndpointUtil.dll",
+        "lib/netstandard2.0/AlibabaCloud.EndpointUtil.dll"
+      ]
+    },
+    "AlibabaCloud.GatewaySpi/0.0.1": {
+      "sha512": "+0f4cS0kNzxnf33J4haXVDRrsazmzUNeS/htrNbQaXeNtr7YseIrzQ7yxkt4CoKFoTZuF3zjqk5RrNwihlIvIg==",
+      "type": "package",
+      "path": "alibabacloud.gatewayspi/0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.gatewayspi.0.0.1.nupkg.sha512",
+        "alibabacloud.gatewayspi.nuspec",
+        "lib/net45/AlibabaCloud.GatewaySpi.dll",
+        "lib/netstandard2.0/AlibabaCloud.GatewaySpi.dll"
+      ]
+    },
+    "AlibabaCloud.OpenApiClient/0.1.1": {
+      "sha512": "++mo7HcQNEkGPcg1Ga8ZG0EYv4/V7MTLw6dc+QRP8109IGFPiS/Jlw62hJAN7PWbEXKdPPup2RbSEsD1lIHbVw==",
+      "type": "package",
+      "path": "alibabacloud.openapiclient/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.openapiclient.0.1.1.nupkg.sha512",
+        "alibabacloud.openapiclient.nuspec",
+        "lib/net45/AlibabaCloud.OpenApiClient.dll",
+        "lib/netstandard2.0/AlibabaCloud.OpenApiClient.dll"
+      ]
+    },
+    "AlibabaCloud.OpenApiUtil/1.0.14": {
+      "sha512": "T0Zp3GF17dVWZ9/G2qfr1ElVs4mIS19sAw0FP/9aGcbsnjUvERQe580PJOdDRGr2kcftraUzpDeHeMP6ShCGtg==",
+      "type": "package",
+      "path": "alibabacloud.openapiutil/1.0.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.openapiutil.1.0.14.nupkg.sha512",
+        "alibabacloud.openapiutil.nuspec",
+        "lib/net45/AlibabaCloud.OpenApiUtil.dll",
+        "lib/netstandard2.0/AlibabaCloud.OpenApiUtil.dll"
+      ]
+    },
+    "AlibabaCloud.RPCClient/1.0.1": {
+      "sha512": "0wCiL/v2+fiL/YgzkMVkL3emWkKl+6AKkOhWd0RrLa/zDhedy+VE43/1ybNBDbekFhp7EeFPUnlHA7Q2O4Yt6g==",
+      "type": "package",
+      "path": "alibabacloud.rpcclient/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.rpcclient.1.0.1.nupkg.sha512",
+        "alibabacloud.rpcclient.nuspec",
+        "lib/net45/AlibabaCloud.RPCClient.dll",
+        "lib/netstandard2.0/AlibabaCloud.RPCClient.dll"
+      ]
+    },
+    "AlibabaCloud.SDK.Common/0.2.5": {
+      "sha512": "gfZ3nBkEDjwSa91Xq6IQW8fuQ4MHRmAtJV6tT/aB1ZAKr1iflsoJUYFskHOOylQsM72T5rmpkrSEghfeZz2dlw==",
+      "type": "package",
+      "path": "alibabacloud.sdk.common/0.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.sdk.common.0.2.5.nupkg.sha512",
+        "alibabacloud.sdk.common.nuspec",
+        "lib/net45/AlibabaCloud.SDK.Common.dll",
+        "lib/netstandard2.0/AlibabaCloud.SDK.Common.dll"
+      ]
+    },
+    "AlibabaCloud.SDK.Iot20180120/3.0.5": {
+      "sha512": "JW4yB/MvBoy/zzkBlFMcdjL6bECLR/bnfvnd/3pu6ieaYDwD6iT/NSIq5D3pXYAHjWAMCEY3vT8TUcW9eTlOvg==",
+      "type": "package",
+      "path": "alibabacloud.sdk.iot20180120/3.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.sdk.iot20180120.3.0.5.nupkg.sha512",
+        "alibabacloud.sdk.iot20180120.nuspec",
+        "lib/net45/AlibabaCloud.SDK.Iot20180120.dll",
+        "lib/netstandard2.0/AlibabaCloud.SDK.Iot20180120.dll"
+      ]
+    },
+    "AlibabaCloud.TeaUtil/0.1.13": {
+      "sha512": "XTxNIJch/35yjyi1mkgBVKLRG+tLKqStbZUrQV1CP1qZZVH5YBNPefKfCwpEAv9HC2q1JlwgHiXxjoSYrFzs1g==",
+      "type": "package",
+      "path": "alibabacloud.teautil/0.1.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "alibabacloud.teautil.0.1.13.nupkg.sha512",
+        "alibabacloud.teautil.nuspec",
+        "lib/net45/AlibabaCloud.TeaUtil.dll",
+        "lib/netstandard2.0/AlibabaCloud.TeaUtil.dll"
+      ]
+    },
+    "Aliyun.Credentials/1.3.1": {
+      "sha512": "6j5cCN16nrT9j9lSn2sxm8BJn4R8F/h6+LCDt2R8PUVeoiWf2f6m8ci8I9RL4Gb9xwmdU5hEW1C/4Txf3DKk+A==",
+      "type": "package",
+      "path": "aliyun.credentials/1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aliyun.credentials.1.3.1.nupkg.sha512",
+        "aliyun.credentials.nuspec",
+        "lib/net45/Aliyun.Credentials.dll",
+        "lib/netstandard2.0/Aliyun.Credentials.dll"
+      ]
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Tea/1.0.11": {
+      "sha512": "EQY+QkJpY8YaYVPd7VFHfQ4mEyYlXsF7oI6p9QCu16sjYVk8yqPr9meHwdAE6AB/0snQ+fk6VeaXSoelLwcHYQ==",
+      "type": "package",
+      "path": "tea/1.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Tea.dll",
+        "lib/netstandard2.0/Tea.dll",
+        "tea.1.0.11.nupkg.sha512",
+        "tea.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/1.7.0": {
+      "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
+      "type": "package",
+      "path": "xamarin.essentials/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/Xamarin.Essentials.dll",
+        "lib/monoandroid10.0/Xamarin.Essentials.pdb",
+        "lib/monoandroid10.0/Xamarin.Essentials.xml",
+        "lib/netstandard1.0/Xamarin.Essentials.dll",
+        "lib/netstandard1.0/Xamarin.Essentials.pdb",
+        "lib/netstandard1.0/Xamarin.Essentials.xml",
+        "lib/netstandard2.0/Xamarin.Essentials.dll",
+        "lib/netstandard2.0/Xamarin.Essentials.pdb",
+        "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/tizen40/Xamarin.Essentials.dll",
+        "lib/tizen40/Xamarin.Essentials.pdb",
+        "lib/tizen40/Xamarin.Essentials.xml",
+        "lib/uap10.0.16299/Xamarin.Essentials.dll",
+        "lib/uap10.0.16299/Xamarin.Essentials.pdb",
+        "lib/uap10.0.16299/Xamarin.Essentials.pri",
+        "lib/uap10.0.16299/Xamarin.Essentials.xml",
+        "lib/xamarinios10/Xamarin.Essentials.dll",
+        "lib/xamarinios10/Xamarin.Essentials.pdb",
+        "lib/xamarinios10/Xamarin.Essentials.xml",
+        "lib/xamarinmac20/Xamarin.Essentials.dll",
+        "lib/xamarinmac20/Xamarin.Essentials.pdb",
+        "lib/xamarinmac20/Xamarin.Essentials.xml",
+        "lib/xamarintvos10/Xamarin.Essentials.dll",
+        "lib/xamarintvos10/Xamarin.Essentials.pdb",
+        "lib/xamarintvos10/Xamarin.Essentials.xml",
+        "lib/xamarinwatchos10/Xamarin.Essentials.dll",
+        "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
+        "lib/xamarinwatchos10/Xamarin.Essentials.xml",
+        "readme.txt",
+        "xamarin.essentials.1.7.0.nupkg.sha512",
+        "xamarin.essentials.nuspec"
+      ]
+    },
+    "Xamarin.Forms/5.0.0.2196": {
+      "sha512": "zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
+      "type": "package",
+      "path": "xamarin.forms/5.0.0.2196",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "build/MonoAndroid10/proguard.cfg",
+        "build/Xamarin.Forms.DefaultItems.props",
+        "build/Xamarin.Forms.DefaultItems.targets",
+        "build/Xamarin.Forms.props",
+        "build/Xamarin.Forms.targets",
+        "build/net46/Mono.Cecil.Mdb.dll",
+        "build/net46/Mono.Cecil.Pdb.dll",
+        "build/net46/Mono.Cecil.Rocks.dll",
+        "build/net46/Mono.Cecil.dll",
+        "build/net46/System.ValueTuple.dll",
+        "build/net46/Xamarin.Forms.Build.Tasks.dll",
+        "build/net46/Xamarin.Forms.Core.dll",
+        "build/net46/Xamarin.Forms.Xaml.dll",
+        "build/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/System.CodeDom.dll",
+        "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard2.0/Xamarin.Forms.Core.dll",
+        "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/MonoAndroid10/proguard.cfg",
+        "buildTransitive/Xamarin.Forms.DefaultItems.props",
+        "buildTransitive/Xamarin.Forms.DefaultItems.targets",
+        "buildTransitive/Xamarin.Forms.props",
+        "buildTransitive/Xamarin.Forms.targets",
+        "buildTransitive/net46/Mono.Cecil.Mdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Pdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Rocks.dll",
+        "buildTransitive/net46/Mono.Cecil.dll",
+        "buildTransitive/net46/System.ValueTuple.dll",
+        "buildTransitive/net46/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/net46/Xamarin.Forms.Core.dll",
+        "buildTransitive/net46/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.dll",
+        "buildTransitive/netstandard2.0/System.CodeDom.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Core.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.xml",
+        "lib/tizen40/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/tizen40/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/tizen40/Xamarin.Forms.Core.dll",
+        "lib/tizen40/Xamarin.Forms.Core.pdb",
+        "lib/tizen40/Xamarin.Forms.Core.xml",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.pdb",
+        "lib/tizen40/Xamarin.Forms.Platform.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.pdb",
+        "lib/tizen40/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.14393/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FlyoutPageControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.16299/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FlyoutPageControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.5.0.0.2196.nupkg.sha512",
+        "xamarin.forms.nuspec"
+      ]
+    },
+    "MyHome/1.0.0": {
+      "type": "project",
+      "path": "../MyHome/MyHome.csproj",
+      "msbuildProject": "../MyHome/MyHome.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "Xamarin.iOS,Version=v1.0": [
+      "MyHome >= 1.0.0",
+      "Xamarin.Essentials >= 1.7.0",
+      "Xamarin.Forms >= 5.0.0.2196"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\xq123\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\projects\\SmartClock\\3.Software\\MyHome\\MyHome\\MyHome.iOS\\MyHome.iOS.csproj",
+      "projectName": "MyHome.iOS",
+      "projectPath": "D:\\projects\\SmartClock\\3.Software\\MyHome\\MyHome\\MyHome.iOS\\MyHome.iOS.csproj",
+      "packagesPath": "C:\\Users\\xq123\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\SmartClock\\3.Software\\MyHome\\MyHome\\MyHome.iOS\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\xq123\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "xamarinios10"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "projectReferences": {
+            "D:\\projects\\SmartClock\\3.Software\\MyHome\\MyHome\\MyHome\\MyHome.csproj": {
+              "projectPath": "D:\\projects\\SmartClock\\3.Software\\MyHome\\MyHome\\MyHome\\MyHome.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "xamarinios10": {
+        "dependencies": {
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

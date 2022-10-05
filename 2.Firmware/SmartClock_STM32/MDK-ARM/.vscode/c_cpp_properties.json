@@ -3,19 +3,19 @@
         {
             "name": "SmartClock",
             "includePath": [
-                "d:\\projects\\CubeMX\\SmartClock\\Core\\Inc",
-                "d:\\projects\\CubeMX\\SmartClock\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
-                "d:\\projects\\CubeMX\\SmartClock\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
-                "d:\\projects\\CubeMX\\SmartClock\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
-                "d:\\projects\\CubeMX\\SmartClock\\Drivers\\CMSIS\\Include",
-                "d:\\projects\\CubeMX\\SmartClock\\Drivers\\U8G2",
-                "d:\\projects\\CubeMX\\SmartClock\\Lib\\inc",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Core\\Inc",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Drivers\\CMSIS\\Include",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Drivers\\U8G2",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Lib\\inc",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "d:\\projects\\CubeMX\\SmartClock\\MDK-ARM",
-                "d:\\projects\\CubeMX\\SmartClock\\Core\\Src",
-                "d:\\projects\\CubeMX\\SmartClock\\Drivers\\STM32F1xx_HAL_Driver\\Src",
-                "d:\\projects\\CubeMX\\SmartClock\\Lib\\src"
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\MDK-ARM",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Core\\Src",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Drivers\\STM32F1xx_HAL_Driver\\Src",
+                "d:\\projects\\SmartClock\\2.Firmware\\SmartClock_STM32\\Lib\\src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

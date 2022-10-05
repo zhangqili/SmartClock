@@ -5,6 +5,7 @@
 uint8_t LOCK = 1;
 SearchResult searchResult;
 uint8_t LOCKStatus = 0;
+uint8_t attempts;
 
 uint8_t CHECK_FR()
 {
@@ -19,6 +20,7 @@ uint8_t CHECK_FR()
         else
         {
             LOCKStatus = 1;
+            attempts++;
         }
     } while (LOCK);
 

@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "5NpHP4KdoZm+qahmHckLcwQ3XV4Izwm53K4wBuLX0I3E2mB63vwRbxY7xhCyjCHXn6tMdk6HisXxzbh8okfBqw==",
+  "success": true,
+  "projectFilePath": "D:\\projects\\SmartClock\\3.Software\\MyHome\\MyHome\\MyHome.iOS\\MyHome.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.endpointutil\\0.1.1\\alibabacloud.endpointutil.0.1.1.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.gatewayspi\\0.0.1\\alibabacloud.gatewayspi.0.0.1.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.openapiclient\\0.1.1\\alibabacloud.openapiclient.0.1.1.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.openapiutil\\1.0.14\\alibabacloud.openapiutil.1.0.14.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.rpcclient\\1.0.1\\alibabacloud.rpcclient.1.0.1.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.sdk.common\\0.2.5\\alibabacloud.sdk.common.0.2.5.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.sdk.iot20180120\\3.0.5\\alibabacloud.sdk.iot20180120.3.0.5.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\alibabacloud.teautil\\0.1.13\\alibabacloud.teautil.0.1.13.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\aliyun.credentials\\1.3.1\\aliyun.credentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\tea\\1.0.11\\tea.1.0.11.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\xq123\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
