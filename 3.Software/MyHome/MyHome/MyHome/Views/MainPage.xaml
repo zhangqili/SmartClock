@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:MyHome.ViewModels"
+             x:Class="MyHome.Views.MainPage">
+    <ContentPage.BindingContext>
+        <viewmodels:MainViewModel></viewmodels:MainViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <RefreshView IsRefreshing="{Binding IsRefreshing}"
+             Command="{Binding RefreshCommand}">
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout  Background="#0078d4">
+                        <Label Text="My Home"
+                   FontSize="72"
+                   HeightRequest="120"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" TextColor="#FFFFFF" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="{Binding DeviceStatus}" />
+                    </StackLayout>
+                    <StackLayout
+                Orientation="Horizontal"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+        
+                        <Grid>
+                            <Grid.RowDefinitions>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0">
+                                    <Label FontSize="32" Text="温度"></Label>
+                                    <Label FontSize="32" Text="{Binding Temperature}"></Label>
+                                </StackLayout>
+                                <StackLayout  Grid.Column="1">
+                                    <Label FontSize="32" Text="湿度"></Label>
+                                    <Label FontSize="32" Text="{Binding Humidity}"></Label>
+                                </StackLayout>
+                                <StackLayout  Grid.Column="2">
+                                    <Label FontSize="32" Text="LED"></Label>
+                                    <Button Text="{Binding LED}" Command="{Binding LEDCommand}">
+                                    </Button>
+                                </StackLayout>
+                            </Grid>
+        
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout
+                Orientation="Horizontal"
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                        <StackLayout Grid.Column="0">
+                            <TimePicker Time="{Binding TimeSpan}"></TimePicker>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1">
+                            <Button Text="设置闹钟"  Command="{Binding AlarmCommand}"></Button>
+                        </StackLayout>
+                        <StackLayout Grid.Column="2">
+                            <Label Text="{Binding TimeText}"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

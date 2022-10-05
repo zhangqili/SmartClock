@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "display.h": "c",
+        "main.h": "c",
+        "dht11.h": "c",
+        "stm32f1xx_hal.h": "c",
+        "oled.h": "c",
+        "cstdio": "c",
+        "U8G2.H": "cpp",
+        "delay.h": "c",
+        "usart.h": "c",
+        "lock.h": "c",
+        "stdio.h": "c",
+        "as608.h": "c",
+        "rain.h": "c"
+    }
+}
