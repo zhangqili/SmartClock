@@ -16,6 +16,7 @@ uint8_t CHECK_FR()
         if (!press_FR(&searchResult))
         {
             LOCK = 0;
+            attempts=0;
         }
         else
         {
