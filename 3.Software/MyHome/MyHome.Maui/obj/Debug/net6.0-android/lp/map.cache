@@ -9,7 +9,16 @@ maui.aar
 Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
 GoogleGson.dll
+HarfBuzzSharp.dll
+LiveChartsCore.dll
+LiveChartsCore.SkiaSharpView.dll
+LiveChartsCore.SkiaSharpView.Maui.dll
 Microsoft.Maui.Graphics.dll
+SkiaSharp.dll
+SkiaSharp.Views.Android.dll
+SkiaSharp.Views.Maui.Controls.Compatibility.dll
+SkiaSharp.Views.Maui.Controls.dll
+SkiaSharp.Views.Maui.Core.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll

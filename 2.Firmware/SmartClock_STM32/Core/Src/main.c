@@ -19,9 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "rtc.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "fsmc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -34,6 +36,7 @@
 #include "lock.h"
 #include "motor.h"
 #include "rain.h"
+#include "lcd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -72,7 +75,7 @@ void SystemClock_Config(void);
 int fputc(int ch, FILE *f)
 {
   uint8_t temp[1] = {ch};
-  HAL_UART_Transmit(&huart1, temp, 1, 2); // huart1�??????要根据你的配置修�??????
+  HAL_UART_Transmit(&huart1, temp, 1, 2); // huart1�??????????要根据你的配置修�??????????
   return ch;
 }
 /* USER CODE END 0 */
@@ -107,10 +110,29 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
-  MX_I2C1_Init();
   MX_USART3_UART_Init();
+  MX_FSMC_Init();
+  MX_I2C2_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
   u8g2Init(&u8g2);
+
+  u8g2_ClearBuffer(&u8g2);
+  u8g2_SetFontMode(&u8g2, 1);
+  u8g2_SetFontDirection(&u8g2, 0);
+  u8g2_SetFont(&u8g2, u8g2_font_freedoomr10_tu);
+  u8g2_DrawStr(&u8g2, 0, 13, "TOUCH SCANNER");
+  u8g2_DrawStr(&u8g2, 0, 25, "TO UNLOCK");
+  u8g2_SendBuffer(&u8g2);
+  LCD_Init();
+  POINT_COLOR=BLACK;
+  printf("startsent");
+  GenerateString();
+  RefreshScreen();
+  if(DHT11_Init())
+	  printf("DHT11 Init Succeed\r\n");
+  else
+	  printf("DHT11 Init Failed\r\n");
   if (!as608_init())
   {
     printf("AS608 Init Succeed\r\n");
@@ -119,9 +141,7 @@ int main(void)
   {
     printf("AS608 Init Failed\r\n");
   }
-  RefreshScreen();
   HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
-  printf("start");
   HAL_TIM_Base_Start_IT(&htim2);
   HAL_UART_Transmit(&huart2, "start", 10, 100);
   HAL_UART_Receive_IT(&huart1, (uint8_t *)UART1_temp, Rec_Long);
@@ -130,8 +150,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  DHT11_Read_FloatData(&temperature, &humidity);
+  LCDInitDisplay();
+  //while (1)
+  //{
+  //  Motor_Forward_Ration();
+  //}
   while (1)
   {
+    printf("loop\n");
     if (LOCK)
     {
       CHECK_FR();
@@ -140,17 +167,18 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	if (RAIN && !CURTAIN)
-		CloseCurtain();
-	if (!RAIN && CURTAIN)
-		OpenCurtain();
+    if (RAIN && !CURTAIN)
+      CloseCurtain();
+    if (!RAIN && CURTAIN)
+      OpenCurtain();
     HAL_UART_Transmit(&huart1, UART1_Rx_Buf, UART1_Rx_cnt, 0xff);
-    DHT11_Read_Data(&temperature, &humidity);
+    DHT11_Read_FloatData(&temperature, &humidity);
     if (UART1_Rx_flg)
       ParseCommand(&huart1);
     if (UART2_Rx_flg)
       ParseCommand(&huart2);
-    if (!(CURRENT_TIME.second % 15))
+	HAL_RTC_GetTime(&hrtc,&tempTime,FORMAT_BIN);
+    if (!(tempTime.Seconds % 15))
     {
       /*
       ftemperature = (float)(temperature>>8) + (temperature & 0xff)/100.0;
@@ -160,9 +188,9 @@ int main(void)
       sprintf(SendStr, "\x80%c%c%c%c\x81%c%c%c%c", ptemperature[0], ptemperature[1], ptemperature[2], ptemperature[3], phumidity[0], phumidity[1], phumidity[2], phumidity[3]);
       HAL_UART_Transmit(&huart2, SendStr, 15, 0xff);
       */
-      sprintf(SendStr, "SETTEMP %f\n", ((temperature>>8) + (temperature & 0xff)/100.0));
+      sprintf(SendStr, "SETTEMP %f\n", temperature);
       HAL_UART_Transmit(&huart2, SendStr, 20, 0xff);
-      sprintf(SendStr, "SETHUMI %f\n", ((humidity>>8) + (humidity & 0xff)/100.0));
+      sprintf(SendStr, "SETHUMI %f\n", humidity);
       HAL_UART_Transmit(&huart2, SendStr, 20, 0xff);
     }
     HAL_UART_Transmit(&huart1, UART1_Rx_Buf, UART1_Rx_cnt, 0xff);
@@ -178,14 +206,16 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
@@ -207,6 +237,12 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_RTC;
+  PeriphClkInit.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+  {
+    Error_Handler();
+  }
 }
 
 /* USER CODE BEGIN 4 */
@@ -214,8 +250,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   if (htim->Instance == htim2.Instance)
   {
-    Tick(&CURRENT_TIME);
+    GenerateString();
     RefreshScreen();
+    RefreshLCD();
     HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
   }
 }

@@ -1,24 +1,25 @@
 #include "dht11.h"
 #include "delay.h"
+#include "main.h"
 
-uint16_t temperature = 0x1010;
-uint16_t humidity = 0x1010;
+float temperature = 0.0;
+float humidity = 0.0;
 
 void DHT11_IO_IN(void)
 { // IO口方向设置为输入
     GPIO_InitTypeDef GPIO_InitStructure;
-    GPIO_InitStructure.Pin = GPIO_PIN_11;
+    GPIO_InitStructure.Pin = DHT11_Pin;
     GPIO_InitStructure.Mode = GPIO_MODE_INPUT;
-    HAL_GPIO_Init(GPIOG, &GPIO_InitStructure);
+    HAL_GPIO_Init(DHT11_GPIO_Port, &GPIO_InitStructure);
 }
 
 void DHT11_IO_OUT(void)
 { // IO口方向设置为输出
     GPIO_InitTypeDef GPIO_InitStructure;
-    GPIO_InitStructure.Pin = GPIO_PIN_11;
+    GPIO_InitStructure.Pin = DHT11_Pin;
     GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
-    HAL_GPIO_Init(GPIOG, &GPIO_InitStructure);
+    HAL_GPIO_Init(DHT11_GPIO_Port, &GPIO_InitStructure);
 }
 
 void DHT11_Rst(void)
@@ -108,15 +109,45 @@ uint8_t DHT11_Read_Data(uint16_t *temp, uint16_t *humi)
     return 0;
 }
 
+uint8_t DHT11_Read_FloatData(float *temp, float *humi)
+{
+    float t = NAN;
+    float h = NAN;
+    uint8_t buf[5];
+    uint8_t i;
+    DHT11_Rst();
+    if (DHT11_Check() == 0)
+    {
+        for (i = 0; i < 5; i++)
+        {
+            buf[i] = DHT11_Read_Byte();
+        }
+        if ((buf[0] + buf[1] + buf[2] + buf[3]) == buf[4])
+        {
+            t = buf[2];
+            if (buf[3] & 0x80)
+            {
+                t = -1 - t;
+            }
+            t += (buf[3] & 0x0f) * 0.1;
+            *temp = t;
+            *humi = (float)buf[0];
+        }
+    }
+    else
+        return 1;
+    return 0;
+}
+
 uint8_t DHT11_Init(void)
 {
     GPIO_InitTypeDef GPIO_Initure; // PG11的初始化已经在cubemx中完成，可以忽略此段初始化代码
-    __HAL_RCC_GPIOG_CLK_ENABLE();
-    GPIO_Initure.Pin = GPIO_PIN_11;
+    __HAL_RCC_GPIOF_CLK_ENABLE();
+    GPIO_Initure.Pin = DHT11_Pin;
     GPIO_Initure.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_Initure.Pull = GPIO_PULLUP;
     GPIO_Initure.Speed = GPIO_SPEED_FREQ_HIGH;
-    HAL_GPIO_Init(GPIOG, &GPIO_Initure);
+    HAL_GPIO_Init(DHT11_GPIO_Port, &GPIO_Initure);
     DHT11_Rst();
     return DHT11_Check();
 }

@@ -2,10 +2,10 @@
 #include "as608.h"
 #include "stdio.h"
 
-uint8_t LOCK = 1;
+uint8_t LOCK = 0;
 SearchResult searchResult;
 uint8_t LOCKStatus = 0;
-uint8_t attempts;
+uint8_t attempts=0;
 
 uint8_t CHECK_FR()
 {

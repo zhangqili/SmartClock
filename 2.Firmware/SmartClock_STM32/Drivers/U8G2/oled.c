@@ -19,7 +19,7 @@ uint8_t u8x8_byte_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_p
     case U8X8_MSG_BYTE_INIT:
     {
         /* add your custom code to init i2c subsystem */
-        MX_I2C1_Init(); //I2C初始化
+        MX_I2C2_Init(); //I2C初始化
     }
     break;
  
@@ -44,7 +44,7 @@ uint8_t u8x8_byte_hw_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_p
  
     case U8X8_MSG_BYTE_END_TRANSFER:
     {
-        if (HAL_I2C_Master_Transmit(&hi2c1, OLED_ADDRESS, buffer, buf_idx, 1000) != HAL_OK)
+        if (HAL_I2C_Master_Transmit(&hi2c2, OLED_ADDRESS, buffer, buf_idx, 1000) != HAL_OK)
             return 0;
     }
     break;

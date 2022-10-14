@@ -2,13 +2,19 @@
 #include "user_uart.h"
 #include "stdio.h"
 #include "string.h"
-#include "time.h"
+#include <time.h>
 #include "usart.h"
 #include "display.h"
+#include "main.h"
+#include "rtc.h"
 
 uint8_t Cmd_Rx_Flg;
 uint8_t cmd[10];
 uint32_t tempData;
+time_t rxTime;
+struct tm* ptm;
+RTC_TimeTypeDef rtcTime;
+RTC_DateTypeDef rtcDate;
 
 void ParseCommand(UART_HandleTypeDef *huart)
 {
@@ -19,9 +25,17 @@ void ParseCommand(UART_HandleTypeDef *huart)
 
 		if (!strcmp(cmd, "SETTIME"))
 		{
-			CURRENT_TIME.hour = tempData / 3600;
-			CURRENT_TIME.minute = tempData / 60 % 60;
-			CURRENT_TIME.second = tempData % 60;
+			rxTime = tempData;
+			ptm = localtime(&rxTime);
+			rtcTime.Hours = ptm->tm_hour;
+			rtcTime.Minutes = ptm->tm_min;
+			rtcTime.Seconds = ptm->tm_sec;
+			HAL_RTC_SetTime(&hrtc,&rtcTime,RTC_FORMAT_BIN);
+			rtcDate.Year = ptm->tm_year%100;
+			rtcDate.Month = ptm->tm_mon+1;
+			rtcDate.Date = ptm->tm_mday;
+			rtcDate.WeekDay = ptm->tm_wday;
+			HAL_RTC_SetDate(&hrtc,&rtcDate,RTC_FORMAT_BIN);
 			i=1;
 		}
 		if (!strcmp(cmd, "SETW"))
@@ -54,10 +68,21 @@ void ParseCommand(UART_HandleTypeDef *huart)
 
 		if (!strcmp(cmd, "SETTIME"))
 		{
-			CURRENT_TIME.hour = tempData / 3600;
-			CURRENT_TIME.minute = tempData / 60 % 60;
-			CURRENT_TIME.second = tempData % 60;
+			rxTime = tempData;
+			ptm = localtime(&rxTime);
+			rtcTime.Hours = ptm->tm_hour;
+			rtcTime.Minutes = ptm->tm_min;
+			rtcTime.Seconds = ptm->tm_sec;
+			HAL_RTC_SetTime(&hrtc,&rtcTime,RTC_FORMAT_BIN);
+			rtcDate.Year = ptm->tm_year%100;
+			rtcDate.Month = ptm->tm_mon+1;
+			rtcDate.Date = ptm->tm_mday;
+			rtcDate.WeekDay = ptm->tm_wday;
+			HAL_RTC_SetDate(&hrtc,&rtcDate,RTC_FORMAT_BIN);
 			i=1;
+			printf("%d\n",ptm->tm_year%100);
+			printf("%d\n",ptm->tm_mon%100);
+			printf("%d\n",ptm->tm_mday%100);
 		}
 		if (!strcmp(cmd, "SETW"))
 		{

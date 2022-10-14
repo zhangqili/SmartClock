@@ -277,7 +277,7 @@ void SendLEDData()
 
 void SendTimeData()
 {
-  sprintf(codeline, "SETTIME %d\n", nowTimespan);
+  sprintf(codeline, "SETTIME %ul\n", timeClient.getEpochTime());
   Serial.print(codeline);
 }
 

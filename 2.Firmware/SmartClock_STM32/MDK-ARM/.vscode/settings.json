@@ -12,6 +12,11 @@
         "lock.h": "c",
         "stdio.h": "c",
         "as608.h": "c",
-        "rain.h": "c"
+        "rain.h": "c",
+        "lcd.h": "c",
+        "stdlib.h": "c",
+        "font.h": "c",
+        "time.h": "c",
+        "fonts.h": "c"
     }
 }
